@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+                                                
+                                              ƒ
+                                     /*The first page(index.html)*/
+                                           /*Backgroundindex*/
+.bg 
+{   position: relative;
+    background-repeat: no-repeat;
+}
+
+                                                  /*navigation*/
+
+.nav-div {
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    float: left;
+    width: 100%;
+    margin: 0%;
+}
+
+.nav-sub-div {
+    position:  relative;
+    left: 33%;
+    display: inline-block;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: transparent;
+    font-weight: bold;
+  
+  }
+
+  .nav .current
+
+  {
+    color: rgb(204, 67, 18);
+  }
+  .nav .navbar-nav
+  {
+    float: left;
+    margin-left: 100;
+  }
+
+  
+                                     /*For the text on index.html*/
+.textonindex
+{
+    color: rgb(255, 255, 255);
+    margin-top: 22%;
+    margin-left: 2%;
+    font-family:serif;
+    font-style: italic;
+    font-size: 95%;
+    font-stretch: ultra-expanded;
+
+}
+  
+  .list{
+    float: left;
+  }
+  
+  .list a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  li a:hover {
+    background-color: rgb(128, 128, 128);
+  }
+  .logo {
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    float: left;
+    z-index: 1;
+  }
+  .col-lg-6
+  {
+    margin: 0%;
+    padding: 0%;
+  }
+  .bgImg
+  {
+      padding: 0px;
+  }
+  .contactelement
+  {
+    background-color: rgb(10, 10, 10);
+    margin: auto auto;
+    padding: 0px;
+    overflow-y: scroll; overflow-x:hidden;
+    margin: auto auto;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
+  }
+
+                                     
+
+                                              /*Forthesecondpage-shows*/
+.bgshows
+{   position: relative;
+    /*background-image: url("../../Assets/images/Showsbackground.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#showspo
+{
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    }
+#showspo1
+{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    text-align: center;
+    display: inline;
+
+}
+.contactelementforshows
+  {
+    background-color: rgb(68, 13, 10);
+    margin: auto auto;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow-x:hidden;
+  }
+
+  .showstop
+  {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+                             /* Popup container - */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+                              /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+                                     /*Bootstrap*/
+                                   /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+                            /* hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+                            /* (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+
+
+        /*For the Eventss Page*/
+  /*For the Eventss Page(Value Counter) */
+
+  #form-id {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+   /* padding-top: 50px; */
+    color: black;
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 0;
+    background: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button 
+  {
+      -webkit-appearance: none;
+      margin: 0;
+  }                            
+
+                                  
+                  
+  .etwo
+  {
+      height: 700%;
+      width: 40%;
+      background:transparent;
+      color: white;
+      text-align: center ;
+      margin-top: 15%;
+      margin-left: 30%;
+      
+  }
+
+.eone
+{
+      margin-bottom: 0%;
+}
+   
+    
+                                          /*For the Forums Page*/
+
+.forum
+{
+    height: 50%;
+    width: 55%;
+    align-content: center;
+    background:black;
+    color: white;
+    text-align: left ;
+    margin-top: 5%;
+    margin-left: 22%;
+    font-style: italic;
+    font-size: 18px;
+    font-family: serif;
+    padding-top: 1%;
+       
+}
+.forummiddle
+{
+    height: 50%;
+    width: 55%;
+    align-content: center;
+    background:rgb(199, 194, 193);
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 22%;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   
+}
+.forumtabletop
+{
+    height: 50%;
+    width: 55%;
+    align-content: left;
+    background:rgba(190, 46, 10, 0.849);
+    color:black;
+    text-align: right;
+    margin-top: 0%;
+    margin-left: 22%;
+    font-style: normal;
+    font-family: monospace;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    
+}
+
+.forumtable
+{
+    font-style: normal;
+    color:black;   
+    display: inline-table;
+    height:50%;  
+    width: 55%;
+    display: inline-table;       
+    margin-top: 0%;
+    margin-left: 22%; 
+    background:rgba(190, 46, 10, 0.849);
+    color:rgb(202, 202, 198);
+  
+    padding-right: 1%;
+    padding-left: 2%;
+    text-align: center;
+    font-display: bold;
+}
+
+                                 /*For the Members Page*/
+
+
+     .members
+     {
+         height: 50%;
+         width: 55%;
+         align-content: center;
+         background:rgb(160, 25, 8);
+         color: rgb(224, 218, 218);
+         text-align: center;
+         margin-top: 5%;
+         margin-left: 23%;
+         font-style: normal;
+         font-size: 13px;
+         font-family: serif;
+         padding-top: 1%;
+         padding-bottom: 1%; 
+         padding-left:1.5%; 
+         
+
+  
+     }
+                        /*For the Text on top of the Members Page*/
+
+   .alignleftm {
+       float: left;
+   }
+   
+                 /*For the Middle part and the picture on the Members Page*/
+   .membersr
+     {
+         height: 100%;
+         width: 55%;
+         align-content: left;
+         background: rgb(160, 25, 8);
+         color: rgb(224, 218, 218);
+         margin-top: 0%;
+         margin-left: 23%;
+         padding-top: 2%;
+         padding-bottom: 7%;  
+         padding-left: 2%;
+  
+     }
+     .membersbottom
+     {
+         height: 100%;
+         width: 55%;
+         align-content: left;
+         background:rgb(3, 3, 3);
+         color: rgb(224, 218, 218);
+         margin-top: 0%;
+         margin-left: 23%;
+         padding-top: 2%;
+         padding-bottom: 1%;  
+         padding-left: 2%;
+         margin-bottom: 20%;
+  
+     }
+
+ 
+                                                         /*For the Contact Page*/
+
+.contactformname
+{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(3, 3, 3);
+  
+}
+
+.contactrevisedd
+{
+    width: 100%;
+    height: 334px;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 30%;
+    font-family: Raleway;
+    color: rgb(165, 154, 154);
+    letter-spacing: 2px;
+    background:rgb(92, 21, 11);
+    position: relative;
+   
+}    
+
+.contact 
+{
+  background-color: rgb(92, 21, 11);
+  max-width: 100%;
+  margin: auto auto;
+  padding: 0;
+}
+                                   
+
+                                 

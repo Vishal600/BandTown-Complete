@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BandTown</title>
+  <link rel="stylesheet" href="../Styles/index.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/png" href="../../Assets/images/Favicon.jpg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--JavaScript Content!-->
+  <script>
+    function increaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+      document.getElementById("final").innerHTML = value * 1500;
+      document.getElementById("finall").innerHTML = value * 1500;
+    }
+  </script>
+  <script>
+    function decreaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number').value = value;
+      document.getElementById("final").innerHTML = value * 1500;
+      document.getElementById("finall").innerHTML = value * 1500;
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Page content-->
+  <div>
+    <div class="bgshows">
+      <img src="../../Assets/images/Showsbackground.jpg" width="100%" height="100%">
+
+
+      <div class="nav-div">
+        <div class="logo">
+          <img src="../../Assets/images/logo.jpg">
+        </div>
+        <nav class="navbar navbar">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav" style="margin-left:32%;">
+              <li class="list"><a href="../index/index.html">Home</a></li>
+              <li class="list"><a href="../shows/shows.html">Shows</a></li>
+              <li class="list"><a href="#contact">Contact</a></li>
+              <li class="list"><a href="../forums/forums.html">Forum</a></li>
+              <li class="list"><a href="../members/members.html">Members</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Ticket Content-->
+
+        <div class="etwo">
+          <h3> Time & Location</h3>
+          <p>Mar 29, 8:10 PM <br>
+            Location is TBA </p>
+          <table class="table">
+            <thead>
+              <tr>
+                <h3>
+                  <th scope="col">
+                    <h3>Tickets</h3>
+                  </th>
+                  <th scope="col">
+                    <h3 style="padding-left:40%;">Price</h3>
+                  </th>
+                  <th scope="col">
+                    <h3 style="padding-left:35%;">Quantity </h3>
+
+                  </th>
+                  <th scope="col">
+                    <h3>Total</h3>
+                  </th>
+                </h3>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="col">
+                  <p>Regular</p>
+                </th>
+                <th scope="col">
+                  <p style="padding-left:50%;">1500</p>
+                </th>
+                <th scope="col">
+                  <form id="form-id">
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                <th scope="col">
+                  <p id="final">N/A</p>
+                </th>
+                </form>
+              </tr>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">
+                  <p style="padding-left:50%;">1500</p>
+                </th>
+                <th scope="col">
+                <th scope="col">
+                  <p id="finall">N/A</p>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn" data-toggle="modal" data-target="#myModal" style="color:rgb(0, 0, 0)">Checkout</button>
+          </button>
+        </div>
+      </div>
+      <!-- Contact Content-->
+      <div class="contactrevisedd">
+        <div class="col-md-4">
+          <a name="contact"></a>
+          <h3 style="color:white;">CONTACT US</h3>
+          <p style="color:white;"><b>EMAIL</b><br>info@bandtown.net</p>
+        </div>
+        <form class="contactformname">
+          <div class="col-md-6 ">
+            <input type="text" placeholder="Name*" style="width: 150%; margin-top: 5%; margin-left:5%;  " />
+            <input type="number" placeholder="Phone*" style="width:150% ; margin-left: 5%; margin-top: 3%;" />
+            <input type="text" placeholder="Email*" style="width: 150%; margin-top: 2%; margin-left: 5%;" />
+            <input type="text" placeholder="Message*"
+              style="width: 150%; margin-left: 5%; margin-top: 2%; height: 80px; padding-bottom:5%; " />
+            <button type="submit" id="submitButton"
+              style="width: 150%; margin-left: 5%; margin-top: 2%;color:black; font-style: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SUBMIT</button>
+            <p id="message"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript-->
+    <script>
+      document.getElementById("submitButton").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("message").innerHTML = "<center><b>Thanks for submiting, We will get back to you within the next 24 hours!</b></center>";
+      });
+    </script>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets</label>
+                <br><br>
+                <center>
+                  <p><b>All tickets to this show are sold out at the moment!</b> </p>
+                </center>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
